@@ -27,8 +27,8 @@ function testSupport(supportedDevices) {
         break;
     }
     if (!isSupported) {
-        alert(`This demo, running on ${detectedDevice.client.name}/${detectedDevice.os.name}, ` +
-            `is not well supported at this time, continue at your own risk.`);
+        alert(`This Project, running on ${detectedDevice.client.name}/${detectedDevice.os.name}, ` +
+            `Please give the camera access to the site and also stand in front of the camera for the project to start working.`);
     }
 }
 const controls = window;
@@ -181,7 +181,7 @@ new controls
     effect: 'background',
 })
     .add([
-    new controls.StaticText({ title: 'MediaPipe Holistic' }),
+    new controls.StaticText({ title: 'FaMo' }),
     fpsControl,
     new controls.Toggle({ title: 'Selfie Mode', field: 'selfieMode' }),
     new controls.SourcePicker({
